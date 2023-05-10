@@ -22,8 +22,8 @@ export default function ToolbarPlugin() {
   const [canRedo, setCanRedo] = useState(false);
   const [isBold, setIsBold] = useState(false);
   const [isItalic, setIsItalic] = useState(false);
-  // const [isUppercase, setIsUppercase] = useState(false);
-  // const [isLowercase, setIsLowercase] = useState(false);
+  const [isUppercase, setIsUppercase] = useState(false);
+  const [isLowercase, setIsLowercase] = useState(false);
   const updateToolbar = useCallback(() => {
     const selection = $getSelection();
     if ($isRangeSelection(selection)) {
